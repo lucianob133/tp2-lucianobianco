@@ -1,0 +1,174 @@
+
+
+body 
+{
+    margin: 0%
+}
+
+/*Barra de nav*/
+.nav-container
+{
+    position: stinky ;
+    z-index: 3;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 17vh;
+    background-color: #1b1b1b ;
+
+}
+
+
+
+.navbar.logo {
+    justify-self: start;
+    margin-left: 20px;
+    color: aliceblue;
+    margin-top: 4vh;
+    cursor: pointer;
+   
+    
+}
+
+.logo-imagen {
+    width: 17vh; /*ANCHO*/
+    height: 17vh; /*ALTO*/
+}
+
+.ver-carrito {
+    font-size: 25px;
+    margin-right: 6%;
+    margin-top: 2.5%;
+    cursor: pointer;
+  
+}
+
+/*banner styles*/
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    background-image: linear-gradient(rgba(233, 226, 226, 0.726), rgb(0, 0, 0));
+
+    /*IMAGEN*/   
+    background-image: url(https://blog.bunkerdb.com/wp-content/uploads/2018/08/Retail-de-supermercado.png); 
+    /*Se agrega la imagen en este caso en el titulo del index que elegi*/
+
+    background-position: 20% 70%; /* center y cover son para ajustar la imagen de fondo detras del texto*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agregar sombra al borde */
+    background-size: cover; /*como quiero la imagen*/
+    padding: 5px 0px; /* controlar el espacio entre el contenido y el borde de un elemento HTML*/
+    
+  
+
+}
+
+.banner-container {
+    text-align: center;
+    padding: 15% 0;
+}
+
+.banner h1 {
+    margin: 0;
+    color: #1b1b1b;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 62px;
+    font-weight: bold;
+    margin-left: 35%;
+}
+
+
+.banner p {
+    font-size: 30px;
+    color: rgb(255, 254, 254);
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.829);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    margin-left: 2%;
+}
+
+/*product cards // content.className = "card";*/
+.shop-content 
+{
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ margin-top: 20px;
+ margin-left: 80px;
+ margin-right: 80px;
+ margin-bottom: 100px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card > img {
+    width: 90%;
+    height: 250px;
+}
+
+.precio{
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: beige;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 0.7;
+   
+}
+
+/* CSS se utiliza para aplicar estilos a un elemento cuando el usuario pasa el cursor sobre él. */
+.card button:hover {
+    opacity: 0.6;
+}
+
+/*------------------------------------------------------------------------*/
+/* Estilos para el footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+}
+
+/* Estilos para el botón de volver arriba */
+.footer button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-left: 80%;
+}
+
+.footer p {
+    width: 25%;
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+    
+}
+
