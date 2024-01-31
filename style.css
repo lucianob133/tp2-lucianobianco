@@ -38,8 +38,8 @@ body
     height: 17vh; /*ALTO*/
 }
 
-.ver-carrito {
-    font-size: 25px;
+.verCarrito {
+    font-size: 60px;
     margin-right: 6%;
     margin-top: 2.5%;
     cursor: pointer;

@@ -1,6 +1,9 @@
 // OBTENER ELEMENTO DEL ID - Mandamos el ID padre del html al JS.
 const shopContent = document.getElementById ("shopContent");
-const verCarrito = document.getElementById ("verCarrito");
+
+const verCarritoContainer = document.getElementById ("verCarrito");
+
+let total = 0;
 
 
 // FOOTER
@@ -96,7 +99,7 @@ productos.forEach((products /*palabra que quiera*/) => {
 
     content.append(comprarBoton);
 
-    
+
     comprarBoton.addEventListener ("click", () => {
         carrito.push
         ({ //esto es para que ponga que es lo que quiera agregar dentro del carrito
@@ -107,11 +110,23 @@ productos.forEach((products /*palabra que quiera*/) => {
 
         })
         console.log(carrito); // agregue esta línea para verificar el contenido del carrito
-    })
-    
-   
 
+        // Actualizar el total
+        total += products.precio;
+
+        // Mostrar el mensaje con el total actual
+        console.log( total);
+
+    })
 });
 
 
+
+
+verCarritoContainer.addEventListener("click", () => 
+{
+    console.log("Contenido del carrito:", carrito);
+    alert("Total a abonar es:", total);
+
+})
 
