@@ -1,0 +1,28 @@
+
+
+[
+    {
+        "id": 1,
+        "nombre": "Cerveza",
+        "precio": 1500,
+        "img": "https://masonlineprod.vtexassets.com/arquivos/ids/217732-800-auto?v=637854086316200000&width=800&height=auto&aspect=true"
+    },
+    {
+        "id": 2,
+        "nombre": "Queso",
+        "precio": 2100,
+        "img": "https://superdepaso.com.ar/wp-content/uploads/2021/06/SANTAROSA-PATEGRAS-04.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Leche",
+        "precio": 900,
+        "img": "https://www.libreriasullivan.com.ar/images/000000000524-00428369524-004.jpeg"
+    },
+    {
+        "id": 4,
+        "nombre": "Papel Higienico",
+        "precio": 2000,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_771939-MLU73785129942_012024-O.webp"
+    }
+]

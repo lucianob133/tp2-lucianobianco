@@ -30,7 +30,7 @@ function scrollToTop() {
 //////////////////////////////////////////////////////////////////////////////////////////
 
 
-const productos = [
+/*const productos = [
     {
         id: 1,
         nombre: " Cerveza",
@@ -62,7 +62,19 @@ const productos = [
         "https://http2.mlstatic.com/D_NQ_NP_771939-MLU73785129942_012024-O.webp"
     },
 
-]
+]*/
+
+// Obtener el contenido del JSON desde el elemento con ID productosJSON / o sea mis productos en JSON.
+const jsonText = document.getElementById('productosJSON').textContent;
+
+// Converto el texto JSON en un objeto JavaScript !
+const productos = JSON.parse(jsonText);
+
+// variable 'productos' en mi código
+console.log(productos);
+
+
+
 
 let carrito = [];
 //este array sirve para darle funcionavilidad a los productos de arriba.
@@ -116,17 +128,22 @@ productos.forEach((products /*palabra que quiera*/) => {
 
         // Mostrar el mensaje con el total actual
         console.log( total);
-
+        
     })
 });
 
 
 
-
-verCarritoContainer.addEventListener("click", () => 
-{
+// AL APRETAR EL CHANGUITO, esta formula flecha hace que se vea el total con un ALERT
+/*verCarritoContainer.addEventListener("click", () => {
     console.log("Contenido del carrito:", carrito);
-    alert("Total a abonar es:", total);
+    alert(`Total a abonar es: ${total}`);
+})*/
+
+//AL APRETAR EL CHANGUITO, esta formula flecha hace que se vea el total con un ALERT
+verCarritoContainer.addEventListener("click", () => {
+    console.log("Contenido del carrito:", carrito);
+    Swal.fire(`Su total a abonar es de $: ${total}.- ,      
+         Gracias por comprar en LUCHOMARKET`);
 
 })
-
